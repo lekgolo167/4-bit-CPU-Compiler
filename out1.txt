@@ -1,0 +1,18 @@
+limit = 7;
+case(count)
+	1: inst = 8'b00000000; // LOAD R0 0
+
+	2: inst = 8'b00010001; // LOAD R1 1
+
+	3: inst = 8'b01000000; // STORE R0
+
+	4: inst = 8'b11000100; // ADD R0 R1
+
+	5: inst = 8'b00111100; // LOAD R3 12
+
+	6: inst = 8'b11110000; // ADD R3 R0
+
+	7: inst = 8'b10101100; // MOVE R2 R3
+
+	default: inst = 8'b00000000;
+endcase
